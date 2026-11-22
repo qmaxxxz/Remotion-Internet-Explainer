@@ -1,0 +1,28 @@
+
+{
+  "title": "How the World Connects",
+  "description": "The Internet Explained",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "scenes": [
+    {"id": "intro", "title": "How the World Connects", "seconds": 30},
+    {"id": "big-picture", "title": "A World Without Borders", "seconds": 30},
+    {"id": "internet", "title": "What Is the Internet?", "seconds": 30},
+    {"id": "history", "title": "The First Connections", "seconds": 30},
+    {"id": "protocols", "title": "The Language of Networks", "seconds": 30},
+    {"id": "ip-address", "title": "Meet the IP Address", "seconds": 30},
+    {"id": "data-packets", "title": "How Data Travels", "seconds": 30},
+    {"id": "routers", "title": "The Power of Routers", "seconds": 30},
+    {"id": "submarine-cables", "title": "Under the Ocean", "seconds": 30},
+    {"id": "servers", "title": "The Role of Servers", "seconds": 30},
+    {"id": "dns", "title": "DNS: The Internet Directory", "seconds": 30},
+    {"id": "data-center", "title": "Inside a Data Center", "seconds": 30},
+    {"id": "wireless", "title": "Wireless Connections", "seconds": 30},
+    {"id": "fiber-optics", "title": "The Speed of Light", "seconds": 30},
+    {"id": "security", "title": "Staying Safe Online", "seconds": 30},
+    {"id": "iot", "title": "The Internet of Things", "seconds": 30},
+    {"id": "future", "title": "The Future Is Connected", "seconds": 30},
+    {"id": "outro", "title": "One World. One Network.", "seconds": 30}
+  ]
+}
