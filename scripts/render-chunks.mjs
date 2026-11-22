@@ -89,4 +89,3 @@ if (process.argv.includes('--merge')) {
 console.log(
   'Chunks complete. Run npm run render:merge to combine them.'
 );
-    
