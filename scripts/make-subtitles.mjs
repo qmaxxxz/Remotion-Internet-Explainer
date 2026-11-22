@@ -47,4 +47,3 @@ fs.writeFileSync(
 );
 
 console.log('Created out/subtitles.srt');
-  
