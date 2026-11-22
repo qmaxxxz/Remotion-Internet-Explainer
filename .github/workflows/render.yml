@@ -1,0 +1,44 @@
+
+name: Render Remotion Video
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check Remotion composition
+        run: npx remotion compositions src/index.ts
+
+      - name: Render and merge chunks
+        run: npm run render:merge
+
+      - name: Upload MP4
+        uses: actions/upload-artifact@v4
+        with:
+          name: internet-explainer-final
+          path: out/final.mp4
+          if-no-files-found: error
+          
