@@ -41,4 +41,3 @@ jobs:
           name: internet-explainer-final
           path: out/final.mp4
           if-no-files-found: error
-          
